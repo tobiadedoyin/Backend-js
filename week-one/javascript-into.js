@@ -109,5 +109,4 @@ console.log(Boolean(NaN));
 console.log(Boolean(null))
 console.log(Boolean(false))
 console.log(Boolean(undefined))
-// console.log(Boolean([]))
 
