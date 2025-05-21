@@ -89,14 +89,3 @@ switch (day) {
         break;
 }
 console.log(message)
-
-/** built in method
- * string methods
- * number method
- * array and array methods
- * object and object methods
- * math functions
- * date
- * json
- * console
- */
