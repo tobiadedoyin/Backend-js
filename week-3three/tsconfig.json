@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "strict": true,
+    "noImplicitAny": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "../week-3three/dist",
+    "rootDir": "./src"
+  },
+  "exclude": ["node_modules"],
+  "include": ["src"]
+}

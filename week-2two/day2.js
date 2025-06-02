@@ -24,23 +24,7 @@ getName(){
 let myClass = new MyClass(10);
 // myClass.getName();
 
-class Animal {
-    constructor(name) {
-        this.name = name;
-        this.speed = 0;
-    }
-
-    run(speed) {
-        this.speed = speed;
-        console.log(`${this.name} runs at ${this.speed}`)
-    } 
-
-    stop(){
-        // this.speed = 30;
-        console.log(`${this.name}`)
-    }
-
-}
+ 
 
 let myAni = new Animal("dog");
 // myAni.run(12)
