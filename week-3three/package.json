@@ -4,9 +4,9 @@
   "description": "favour class",
   "main": "index.js",
   "scripts": {
-    "start": "node ./src/index.js",
-    "start:dev": "tsc ./src/index.ts",
-    "dev": "ts-node ./src/index.ts",
+    "start": "node ./src/day2.js",
+    "start:dev": "tsc ./src/day2.ts",
+    "dev": "ts-node ./src/day2.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
