@@ -1,0 +1,11 @@
+{
+    "type": "commonjs",
+    "scripts": {
+        "start": "node app.js",
+        "dev": "node --watch app.js"
+    },
+    "dependencies": {
+        "bcrypt": "^6.0.0",
+        "dayjs": "^1.11.13"
+    }
+}

@@ -59,3 +59,74 @@ class Road {
 
 }
 let ro = new Road(2,5);
+
+//generic
+function identity<T>(arg: T[]): T[] {
+return [];
+}
+
+identity(["string", 9, true])
+
+function two (arg: any){
+
+}
+
+two(67)
+
+//decorators
+function first() {
+    return function(target: any, propertyKey: string, descriptor: PropertyDescriptor) {
+
+    }
+}
+
+class tu {
+    // @first()
+}
+
+//UTILITY TYPES - PARTIAL, readonly, pick, omit 
+interface User {
+    name: string;
+    age: number;
+    email: string;
+    password: string;
+}
+
+let input: User;
+
+function createUser(user: User): Partial<User> {
+    //
+    return {
+        name : "kemi",
+        age: 30,
+        // email:"oiugfdxcghjkl;",
+        // password:"irurrrhrfff",
+        // ...user
+    }
+}
+
+const newUser = createUser({name: "tobi", email: "", age: 70, password: "tuttuttyt"});
+console.log(newUser)
+
+type User2 = Omit<User, "password">
+
+let uyr: User2;
+
+//pick
+interface Todo {
+    title: string;
+    desc: string;
+    completed: boolean
+}
+
+type PickTodo = Pick<Todo, 'title' | 'desc'>
+type LoginUser = Pick<User, 'email' | 'password'>
+
+// Readonly
+const readonlyTodo: Readonly<Todo> = {
+    title: "mee",
+    desc: "",
+    completed: true
+}
+
+//Record, Exclude, Extracted, Awaited
